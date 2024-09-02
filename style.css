@@ -1,0 +1,578 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1e1e2e; /* Dark purple background */
+    color: #eaeaea; /* Light text for contrast */
+    line-height: 1.6;
+}
+
+/* Header styling */
+header {
+    background-color: #2b2b40;
+    color: #eaeaea;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.8em;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a,
+nav ul li button {
+    color: #a29bfe;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1em;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+nav ul li button:hover {
+    color: #74b9ff;
+}
+
+/* Hero section */
+#hero {
+    background-color: #1e1e2e;
+    color: #eaeaea;
+    padding: 120px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#hero h2 {
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+#hero p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #b2bec3;
+}
+
+.cta-button {
+    background-color: #6c5ce7;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+    background-color: #a29bfe;
+}
+
+/* Modal styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #2b2b40;
+    color: white;
+    margin: 15% auto;
+    padding: 40px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.modal-content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-content form label {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+    color: #eaeaea;
+}
+
+.modal-content form input {
+    padding: 15px;
+    font-size: 1.2em;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #3b3b5b;
+    color: white;
+    outline: none;
+}
+
+.modal-content .cta-button {
+    background-color: #6c5ce7;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.2em;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content .cta-button:hover {
+    background-color: #a29bfe;
+}
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: white;
+}
+
+/* Feature section styling */
+#features ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.feature-box {
+    font-size: 1.2em;
+    margin: 20px;
+    background-color: #3b3b5b;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+    flex-grow: 1;
+    color: #eaeaea;
+}
+
+/* Section styling */
+section {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #2b2b40;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background-color: #2b2b40;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+/* General button styling */
+.cta-button {
+    background-color: #6c5ce7; /* Bright purple */
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border: none; /* Remove white border */
+    outline: none; /* Remove outline */
+}
+
+/* Hover and focus state */
+.cta-button:hover, 
+.cta-button:focus {
+    background-color: #a29bfe; /* Softer purple */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Updated shadow for focus */
+    outline: none; /* Ensure no outline on focus */
+}
+
+/* Active state for better click feedback */
+.cta-button:active {
+    background-color: #9b59b6; /* Darker purple when pressed */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    outline: none; /* Prevent focus outline when clicked */
+}
+/* Input Field Styling - Half Width */
+/* Form Group Styling */
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Form Group Styling - Align Labels and Inputs */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    width: 100%; /* Ensure the group takes full width */
+}
+
+/* Label Styling */
+.form-group label {
+    color: #eaeaea;
+    font-size: 1.2em;
+    margin-bottom: 8px; /* Add space between label and input */
+}
+
+/* General input field styling */
+form input[type="email"],
+form input[type="password"] {
+    background-color: #3b3b5b; /* Same as button but slightly muted */
+    color: white;
+    padding: 15px;
+    font-size: 1.2em;
+    width: 100%;
+    margin-bottom: 20px;
+    border: none; /* Remove borders */
+    border-radius: 30px; /* Match the button's rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+    outline: none; /* Remove default outline */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus state for input fields */
+form input[type="email"]:focus,
+form input[type="password"]:focus {
+    background-color: #4b4b6b; /* Slightly lighter background on focus */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Enhance shadow on focus */
+    outline: none; /* Prevent focus outline */
+}
+
+/* Active state for input fields */
+form input[type="email"]:active,
+form input[type="password"]:active {
+    background-color: #6c5ce7; /* Similar to button active state */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+/* Flashcard container */
+#flashcard-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+/* Flashcard  css  */
+
+/* Flashcard Form Styling */
+.flashcard-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #2b2b40;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.flashcard-form label {
+    color: #eaeaea;
+    font-size: 1.2em;
+    margin-bottom: 8px;
+}
+
+.flashcard-form textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1em;
+    background-color: #3b3b5b;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.flashcard-form .cta-button {
+    display: inline-block;
+    width: 100%;
+}
+
+/* Flashcard Container */
+.flashcard-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 0;
+}
+
+/* Flashcard Styling */
+.flashcard {
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+}
+
+.flashcard-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    background-color: transparent;
+}
+
+.flashcard.is-flipped .flashcard-inner {
+    transform: rotateY(180deg);
+}
+
+.flashcard-front,
+.flashcard-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 1.4em;
+    color: white;
+}
+
+.flashcard-front {
+    background-color: #6c5ce7;
+}
+
+.flashcard-back {
+    background-color: #3b3b5b;
+    transform: rotateY(180deg);
+}
+
+/* Card Hover and Interaction */
+.flashcard:hover .flashcard-inner {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+/* Flashcard Styling */
+.flashcard {
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+    position: relative;
+}
+
+/* Check and X Icon Styling */
+.check-mark, .x-mark {
+    position: absolute;
+    top: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.check-mark {
+    right: 15px;
+    color: #2ecc71; /* Green for correct */
+}
+
+.x-mark {
+    left: 15px;
+    color: #e74c3c; /* Red for incorrect */
+}
+
+.check-mark:hover, .x-mark:hover {
+    transform: scale(1.2); /* Scale icons on hover */
+}
+
+/* Add specific classes for answered flashcards */
+.answered-correctly {
+    border: 2px solid #2ecc71;
+}
+
+.answered-incorrectly {
+    border: 2px solid #e74c3c;
+}
+/* Category Dropdown Styling */
+form select {
+    background-color: #3b3b5b; /* Same color as input fields */
+    color: white;
+    padding: 15px;
+    font-size: 1.2em;
+    width: 100%;
+    border: none; /* Remove borders */
+    border-radius: 30px; /* Match button and input's rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow */
+    appearance: none; /* Remove default dropdown arrow */
+    background-image: url('data:image/svg+xml;utf8,<svg fill="white" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>'); /* Custom arrow icon */
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 20px;
+    outline: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form select:hover,
+form select:focus {
+    background-color: #4b4b6b; /* Slightly lighter background on hover/focus */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Enhance shadow */
+    outline: none; /* Prevent outline on focus */
+}
+
+form select:active {
+    background-color: #6c5ce7; /* Darker background when selecting */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+/* New Category Input and Button Styling */
+.form-group#new-category-group {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+form input[type="text"] {
+    background-color: #3b3b5b; /* Same background as other inputs */
+    color: white;
+    padding: 15px;
+    font-size: 1.2em;
+    flex-grow: 1; /* Ensures the input takes up available space */
+    border: none;
+    border-radius: 30px 0 0 30px; /* Rounded corners on the left side */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    outline: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-right: -5px; /* Slight overlap with the button to avoid gaps */
+}
+
+form input[type="text"]:focus {
+    background-color: #4b4b6b;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    outline: none;
+}
+
+form input[type="text"]:active {
+    background-color: #6c5ce7;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+form button.cta-button#addCategoryBtn {
+    padding: 15px 20px;
+    background-color: #6c5ce7;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 0 30px 30px 0; /* Rounded corners on the right side */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+form button.cta-button#addCategoryBtn:hover {
+    background-color: #a29bfe; /* Softer purple on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+form button.cta-button#addCategoryBtn:active {
+    background-color: #9b59b6;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+/* Adjusted New Category Input and Button Styling */
+.form-group#new-category-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* New Category Input Field */
+form input[type="text"] {
+    background-color: #3b3b5b;
+    color: white;
+    padding: 15px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 30px; /* Fully rounded */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    outline: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    flex-grow: 2; /* Ensures input takes up more space */
+    margin-right: 15px; /* Space between input and button */
+}
+
+/* Add Category Button */
+form button.cta-button#addCategoryBtn {
+    padding: 15px 30px;
+    background-color: #6c5ce7;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    flex-grow: 1; /* Allows the button to take some space */
+}
+
+form button.cta-button#addCategoryBtn:hover {
+    background-color: #a29bfe; /* Softer purple on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+form button.cta-button#addCategoryBtn:active {
+    background-color: #9b59b6;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
